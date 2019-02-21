@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('http://thesource.com/wp-content/uploads/2018/02/tumblr_o2k7tqhBTB1t1yehoo1_1280.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/*Front Page*/
+#frontPage{
+    background-image: url('../img/biggie2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#title{
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+
+   
+}
+
+#title h1 {
+    font-family: arial;
+    color: white;
+    font-size: 100px;
+}
+
+#title p {
+    color: white;
+    font-family: arial;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#title a{
+    background-color: #F7AB8B;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 12px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-top: 200px;
+    font-family: arial;
+
+}
+#button{
+    padding-top: 20px;
+}
+#title a:hover{
+    background-color: #F9CC8A;
+}
+
+
+/*Card Game */
+#grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    justify-content: center;
+    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+}
+
+#grid div{
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#count{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    background-image: none !important;
+    font-family: helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#count h1 {
+    line-height: 100px;
+    background-image: none !important;
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+
+.scene{
+    height: 100px;
+    width: 100px;
+    perspective: 600px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transform-style: preserve-3d;
+    -o-transition: -o-transform 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 1s;
+}
+
+.card_face{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card_face_front{
+    background-image: url('../img/rapMatch-01.png');
+
+}
+
+.bigL .card_face_back{
+    background-image:url('https://media0.giphy.com/media/z5nsl562t2bug/giphy.gif?cid=3640f6095c68c1c16b454d546f05a8f2');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+}
+
+.MFdoom .card_face_back{
+    background-image:url('https://media2.giphy.com/media/Q0FX7mkyWCk24/giphy.gif?cid=3640f6095c6b13754469384d73c7237e');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.JayZ .card_face_back{
+    background-image:url('https://media0.giphy.com/media/MG7Ox4h7r2riU/giphy.gif?cid=3640f6095c6b14277744694377d36e38');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+
+.biggieSmalls .card_face_back{
+    background-image:url('https://media0.giphy.com/media/XDRPimdD7Eucg/giphy.gif?cid=3640f6095c6b15254c524a756f16f9dc');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.tupac .card_face_back{
+    background-image:url('https://media1.giphy.com/media/E2uKqBQURFHfG/giphy.gif?cid=3640f6095c6b15d8396c397436bef046');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+.dre .card_face_back{
+    background-image:url('https://media2.giphy.com/media/vYnAa9UXkKADe/giphy.gif?cid=3640f6095c6b17ef4e72342e5908e3a7');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.snoop .card_face_back{
+    background-image:url('https://media.giphy.com/media/Kzvsru1JqQg4E/giphy.gif');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.nas .card_face_back{
+    background-image:url('https://media.giphy.com/media/VLiQrqAIjsCvm/giphy.gif');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.mobbDeep .card_face_back{
+    background-image:url('https://media.giphy.com/media/3og0IIjDq8J2L50e5y/giphy.gif');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.eminem .card_face_back{
+    background-image:url('https://media.giphy.com/media/gsiU9okEUmhsA/giphy.gif');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+.wutang .card_face_back{
+    background-image:url('https://media2.giphy.com/media/rj785SHP1B7HO/giphy.gif?cid=3640f6095c6b1f687451446c2e0e8747');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.outKast .card_face_back{
+    background-image:url('https://media3.giphy.com/media/JAu8D81jtZkwE/giphy.gif?cid=3640f6095c6b20bc4533434951f8fd4b');
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    backface-visibility: visible;
+
+  }
+
+
+
+
